@@ -13,6 +13,11 @@
 		285ADF7B2798CC6D00E6A249 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF692798CC6C00E6A249 /* ContentView.swift */; };
 		285ADF7C2798CC6D00E6A249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285ADF6A2798CC6D00E6A249 /* Assets.xcassets */; };
 		285ADF7D2798CC6D00E6A249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285ADF6A2798CC6D00E6A249 /* Assets.xcassets */; };
+		285ADF872798CC8200E6A249 /* sfsymbols.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285ADF862798CC8200E6A249 /* sfsymbols.txt */; };
+		285ADF882798CC8200E6A249 /* sfsymbols.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285ADF862798CC8200E6A249 /* sfsymbols.txt */; };
+		285ADF8A2798CC9500E6A249 /* SFSymbolsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF892798CC9500E6A249 /* SFSymbolsModel.swift */; };
+		285ADF8B2798CC9500E6A249 /* SFSymbolsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF892798CC9500E6A249 /* SFSymbolsModel.swift */; };
+		285ADF8E2798D19800E6A249 /* LPSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 285ADF8D2798D19800E6A249 /* LPSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,8 @@
 		285ADF6F2798CC6D00E6A249 /* DevTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285ADF752798CC6D00E6A249 /* DevTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285ADF772798CC6D00E6A249 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		285ADF862798CC8200E6A249 /* sfsymbols.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sfsymbols.txt; sourceTree = "<group>"; };
+		285ADF892798CC9500E6A249 /* SFSymbolsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285ADF8E2798D19800E6A249 /* LPSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +64,9 @@
 			children = (
 				285ADF682798CC6C00E6A249 /* DevToolsApp.swift */,
 				285ADF692798CC6C00E6A249 /* ContentView.swift */,
+				285ADF892798CC9500E6A249 /* SFSymbolsModel.swift */,
 				285ADF6A2798CC6D00E6A249 /* Assets.xcassets */,
+				285ADF862798CC8200E6A249 /* sfsymbols.txt */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -94,6 +104,9 @@
 			dependencies = (
 			);
 			name = "DevTools (iOS)";
+			packageProductDependencies = (
+				285ADF8D2798D19800E6A249 /* LPSwiftUI */,
+			);
 			productName = "DevTools (iOS)";
 			productReference = 285ADF6F2798CC6D00E6A249 /* DevTools.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +155,9 @@
 				Base,
 			);
 			mainGroup = 285ADF622798CC6C00E6A249;
+			packageReferences = (
+				285ADF8C2798D19800E6A249 /* XCRemoteSwiftPackageReference "LPSwiftUI" */,
+			);
 			productRefGroup = 285ADF702798CC6D00E6A249 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				285ADF7C2798CC6D00E6A249 /* Assets.xcassets in Resources */,
+				285ADF872798CC8200E6A249 /* sfsymbols.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				285ADF7D2798CC6D00E6A249 /* Assets.xcassets in Resources */,
+				285ADF882798CC8200E6A249 /* sfsymbols.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +196,7 @@
 			files = (
 				285ADF7A2798CC6D00E6A249 /* ContentView.swift in Sources */,
 				285ADF782798CC6D00E6A249 /* DevToolsApp.swift in Sources */,
+				285ADF8A2798CC9500E6A249 /* SFSymbolsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +206,7 @@
 			files = (
 				285ADF7B2798CC6D00E6A249 /* ContentView.swift in Sources */,
 				285ADF792798CC6D00E6A249 /* DevToolsApp.swift in Sources */,
+				285ADF8B2798CC9500E6A249 /* SFSymbolsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +472,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		285ADF8C2798D19800E6A249 /* XCRemoteSwiftPackageReference "LPSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukepistrol/LPSwiftUI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		285ADF8D2798D19800E6A249 /* LPSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 285ADF8C2798D19800E6A249 /* XCRemoteSwiftPackageReference "LPSwiftUI" */;
+			productName = LPSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 285ADF632798CC6C00E6A249 /* Project object */;
 }

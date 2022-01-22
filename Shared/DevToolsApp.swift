@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct DevToolsApp: App {
+	@StateObject private var model: SFSymbolsModel = .init()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+				.environmentObject(model)
         }
     }
 }
