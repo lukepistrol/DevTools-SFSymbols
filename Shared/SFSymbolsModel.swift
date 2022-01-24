@@ -12,13 +12,18 @@ import SwiftUI
 class SFSymbolsModel: ObservableObject {
 
 	@Published private (set) var symbols: [SFSymbol] = []
-	@Published var backgroundColor: Color = .primaryBackground
 	@Published var symbolColor: Color = .accentColor
 	@Published var symbolSecondaryColor: Color = .indigo
 	@Published var symbolTertiaryColor: Color = .primary
 	@Published var renderingModeSelection: Int = 0
 	@Published var searchText: String = ""
 	@Published var selectedWeight: Font.Weight = .regular
+
+    #if os(macOS)
+	@Published var backgroundColor: Color = .windowBackground
+	#else
+	@Published var backgroundColor: Color = .primaryBackground
+	#endif
 
 	public var filteredSympols: [SFSymbol] {
 		if searchText.isEmpty {

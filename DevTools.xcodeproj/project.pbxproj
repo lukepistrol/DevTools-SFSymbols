@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		285ADF782798CC6D00E6A249 /* DevToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF682798CC6C00E6A249 /* DevToolsApp.swift */; };
 		285ADF792798CC6D00E6A249 /* DevToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF682798CC6C00E6A249 /* DevToolsApp.swift */; };
-		285ADF7A2798CC6D00E6A249 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF692798CC6C00E6A249 /* ContentView.swift */; };
-		285ADF7B2798CC6D00E6A249 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF692798CC6C00E6A249 /* ContentView.swift */; };
+		285ADF7A2798CC6D00E6A249 /* SFSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF692798CC6C00E6A249 /* SFSymbolsView.swift */; };
+		285ADF7B2798CC6D00E6A249 /* SFSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF692798CC6C00E6A249 /* SFSymbolsView.swift */; };
 		285ADF7C2798CC6D00E6A249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285ADF6A2798CC6D00E6A249 /* Assets.xcassets */; };
 		285ADF7D2798CC6D00E6A249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285ADF6A2798CC6D00E6A249 /* Assets.xcassets */; };
 		285ADF872798CC8200E6A249 /* sfsymbols.txt in Resources */ = {isa = PBXBuildFile; fileRef = 285ADF862798CC8200E6A249 /* sfsymbols.txt */; };
@@ -18,17 +18,21 @@
 		285ADF8A2798CC9500E6A249 /* SFSymbolsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF892798CC9500E6A249 /* SFSymbolsModel.swift */; };
 		285ADF8B2798CC9500E6A249 /* SFSymbolsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ADF892798CC9500E6A249 /* SFSymbolsModel.swift */; };
 		285ADF8E2798D19800E6A249 /* LPSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 285ADF8D2798D19800E6A249 /* LPSwiftUI */; };
+		28CF03FA279F39B2007F16BC /* SymbolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF03F9279F39B2007F16BC /* SymbolCell.swift */; };
+		28CF03FB279F39B2007F16BC /* SymbolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CF03F9279F39B2007F16BC /* SymbolCell.swift */; };
+		28CF03FE279F3B91007F16BC /* LPSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 28CF03FD279F3B91007F16BC /* LPSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		285ADF682798CC6C00E6A249 /* DevToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevToolsApp.swift; sourceTree = "<group>"; };
-		285ADF692798CC6C00E6A249 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		285ADF692798CC6C00E6A249 /* SFSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsView.swift; sourceTree = "<group>"; };
 		285ADF6A2798CC6D00E6A249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		285ADF6F2798CC6D00E6A249 /* DevTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285ADF752798CC6D00E6A249 /* DevTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285ADF772798CC6D00E6A249 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		285ADF862798CC8200E6A249 /* sfsymbols.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sfsymbols.txt; sourceTree = "<group>"; };
 		285ADF892798CC9500E6A249 /* SFSymbolsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsModel.swift; sourceTree = "<group>"; };
+		28CF03F9279F39B2007F16BC /* SymbolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CF03FE279F3B91007F16BC /* LPSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,7 @@
 				285ADF672798CC6C00E6A249 /* Shared */,
 				285ADF762798CC6D00E6A249 /* macOS */,
 				285ADF702798CC6D00E6A249 /* Products */,
+				28CF03FC279F3B91007F16BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,7 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				285ADF682798CC6C00E6A249 /* DevToolsApp.swift */,
-				285ADF692798CC6C00E6A249 /* ContentView.swift */,
+				285ADF692798CC6C00E6A249 /* SFSymbolsView.swift */,
+				28CF03F9279F39B2007F16BC /* SymbolCell.swift */,
 				285ADF892798CC9500E6A249 /* SFSymbolsModel.swift */,
 				285ADF6A2798CC6D00E6A249 /* Assets.xcassets */,
 				285ADF862798CC8200E6A249 /* sfsymbols.txt */,
@@ -86,6 +93,13 @@
 				285ADF772798CC6D00E6A249 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		28CF03FC279F3B91007F16BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +138,9 @@
 			dependencies = (
 			);
 			name = "DevTools (macOS)";
+			packageProductDependencies = (
+				28CF03FD279F3B91007F16BC /* LPSwiftUI */,
+			);
 			productName = "DevTools (macOS)";
 			productReference = 285ADF752798CC6D00E6A249 /* DevTools.app */;
 			productType = "com.apple.product-type.application";
@@ -194,7 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				285ADF7A2798CC6D00E6A249 /* ContentView.swift in Sources */,
+				285ADF7A2798CC6D00E6A249 /* SFSymbolsView.swift in Sources */,
+				28CF03FA279F39B2007F16BC /* SymbolCell.swift in Sources */,
 				285ADF782798CC6D00E6A249 /* DevToolsApp.swift in Sources */,
 				285ADF8A2798CC9500E6A249 /* SFSymbolsModel.swift in Sources */,
 			);
@@ -204,7 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				285ADF7B2798CC6D00E6A249 /* ContentView.swift in Sources */,
+				285ADF7B2798CC6D00E6A249 /* SFSymbolsView.swift in Sources */,
+				28CF03FB279F39B2007F16BC /* SymbolCell.swift in Sources */,
 				285ADF792798CC6D00E6A249 /* DevToolsApp.swift in Sources */,
 				285ADF8B2798CC9500E6A249 /* SFSymbolsModel.swift in Sources */,
 			);
@@ -339,7 +358,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +388,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lukaspistrol.DevTools;
 				PRODUCT_NAME = DevTools;
@@ -431,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lukaspistrol.DevTools;
 				PRODUCT_NAME = DevTools;
@@ -486,6 +505,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		285ADF8D2798D19800E6A249 /* LPSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 285ADF8C2798D19800E6A249 /* XCRemoteSwiftPackageReference "LPSwiftUI" */;
+			productName = LPSwiftUI;
+		};
+		28CF03FD279F3B91007F16BC /* LPSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 285ADF8C2798D19800E6A249 /* XCRemoteSwiftPackageReference "LPSwiftUI" */;
 			productName = LPSwiftUI;
